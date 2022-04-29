@@ -11,9 +11,10 @@ const Stock = {
         const stockPricesFilePath = path.join(__dirname, '../data/stockPrices.json');
         const stockPrices = JSON.parse(fs.readFileSync(stockPricesFilePath, 'utf-8'));
       
+        // Busco el precio del stock para la fecha solicitada.
         let price = stockPrices.find(stockPrices => (stockPrices.stockName === this.stockName && stockPrices.date === date ));
-        //Valido si tiene resultados para enviar el precio encontrado o 0 si no tiene datos.
 
+        //Valido si tiene resultados para enviar el precio encontrado o 0 si no tiene datos.
         return price === undefined?0: price.price;
     }
 };

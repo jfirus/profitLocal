@@ -2,6 +2,7 @@ const Stock = require('./stock');
 const Profit = require('./profit');
 const fs = require('fs');
 const path = require('path');
+const ANUALIZADO = 365;
 
 const Portfolio = {
     stocks : [],
@@ -45,12 +46,11 @@ const Portfolio = {
             let price1 = this.price(element, date1) * element.quantity;
             let price2 = this.price(element, date2) * element.quantity;
          
-            console.log('Para el elemento: ' + element.stockName + ', los precios son: precio1: ' + price1 + ' y precio2: ' + price2);
-
+            // Profit entre las fechas
             profit.pricebetweenDates += price2-price1;
-            profit.priceAccumulated += (profit.pricebetweenDates * 365)/diffDate;
+            // Profit acumulado en el año
+            profit.priceAccumulated += (profit.pricebetweenDates * ANUALIZADO)/diffDate;
         });
-
         return profit;
     }
 };

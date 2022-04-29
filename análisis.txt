@@ -1,0 +1,18 @@
+Portfolio: Resumen de los activos financieros
+Stocks(Acciones) de mercado. Tienen un nombre de 4 letras
+	- Como individuo tenés X cantidad de acciones, que se cotizan aun valor determinado en una determinada fecha. Precio definido por el mercado
+	
+***Clases***
+
+Stock:
+	- denominación
+	- cantidad
+	
+Portfolio:
+	- Atributo: stocks (collection del objeto stock)
+	- Métodos: profit(date1, date2)
+	
+Método: Profit
+			- Devuelve precio entre dos fechas
+			- Devuelve precio acumulado
+	
