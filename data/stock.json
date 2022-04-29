@@ -1,0 +1,8 @@
+[   {"stockName": "AAAA", "quantity": 20},
+    {"stockName": "BBBB", "quantity": 100},
+    {"stockName": "CCCC", "quantity": 55.40},
+    {"stockName": "DDDD", "quantity": 10.05},
+    {"stockName": "EEEE", "quantity": 1000},
+    {"stockName": "FFFF", "quantity": 500},
+    {"stockName": "GGGG", "quantity": 200.05}
+]
